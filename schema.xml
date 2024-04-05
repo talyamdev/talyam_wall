@@ -1,0 +1,8 @@
+<database name="db" defaultIdMethod="native">
+  <table name="posts" phpName="Post">
+    <column name="id" required="true" primaryKey="true" autoIncrement="true" type="integer" />
+    <column name="author" type="varchar" size="100" />
+    <column name="heading" type="varchar" size="500" />
+    <column name="body" type="varchar" size="1000" />
+  </table>
+</database>

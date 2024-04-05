@@ -1,0 +1,11 @@
+{
+    "require": {
+        "propel/propel": "~2.0@beta"
+    },
+    "autoload": {
+        "classmap": ["generated-classes/"]
+    },
+    "scripts": {
+        "start": "php -S localhost:8080"
+    }
+}
