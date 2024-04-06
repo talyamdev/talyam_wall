@@ -3,3 +3,4 @@ generated-conf
 generated-sql
 vendor
 propel.yaml
+composer.lock
