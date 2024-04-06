@@ -4,8 +4,5 @@
     },
     "autoload": {
         "classmap": ["generated-classes/"]
-    },
-    "scripts": {
-        "start": "php -S localhost:8080"
     }
 }

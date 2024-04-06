@@ -1,8 +1,8 @@
 <?php
-require_once 'vendor/autoload.php';
-require_once 'generated-conf/config.php';
+    require_once 'vendor/autoload.php';
+    require_once 'generated-conf/config.php';
 
-$posts = PostQuery::create()->find();
+    $posts = PostQuery::create()->find();
 ?>
 
 <!DOCTYPE html>
@@ -16,12 +16,12 @@ $posts = PostQuery::create()->find();
     <link href="/styles.css" rel="stylesheet">
 </head>
 <body data-bs-theme="dark">
-    <div class="container mt-2">
+    <div class="container mt-3">
         <h1 class="text-center">Добро пожаловать в стену статусов Талям!</h1>
 
         <div class="bg-body-secondary px-3 py-2 rounded mt-3 position-relative">
             <h3 class="text-center">Посты:</h3>
-            <button type="button" class="position-absolute btn btn-primary add_btn">Добавить</button>
+            <a href="create_post.php" class="position-absolute btn btn-primary add_btn">Добавить</a>
 
             <table class="table table-dark table-striped">
                 <thead>
