@@ -32,6 +32,8 @@
             <h3><?= htmlspecialchars($post->getHeading(), ENT_QUOTES, 'UTF-8') ?></h3>
 
             <p class="mb-0"><?= nl2br($post->getBody()) ?></p>
+
+            <a class="btn btn-primary" href="/">Назад</a>
         </div>
     </div>
 
