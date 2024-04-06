@@ -17,7 +17,7 @@
 </head>
 <body data-bs-theme="dark">
     <div class="container mt-3">
-        <h1 class="text-center">Добро пожаловать в стену статусов Талям!</h1>
+        <h1 class="text-center">Добро пожаловать в стену Талям!</h1>
 
         <div class="bg-body-secondary px-3 py-2 rounded mt-3 position-relative">
             <h3 class="text-center">Посты:</h3>
@@ -34,7 +34,7 @@
                     <?php foreach (array_reverse(iterator_to_array($posts)) as $post): ?>
                     <tr>
                         <td><?= htmlspecialchars($post->getAuthor(), ENT_QUOTES, 'UTF-8') ?></td>
-                        <td><?= htmlspecialchars($post->getHeading(), ENT_QUOTES, 'UTF-8') ?></td>
+                        <td><a href=<?= "get_post.php?id=".$post->getId() ?>><?= htmlspecialchars($post->getHeading(), ENT_QUOTES, 'UTF-8') ?></a></td>
                     </tr>
                     <?php endforeach; ?>
                 </tbody>
