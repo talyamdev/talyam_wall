@@ -31,7 +31,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <?php foreach ($posts as $post): ?>
+                    <?php foreach (array_reverse(iterator_to_array($posts)) as $post): ?>
                     <tr>
                         <td><?= htmlspecialchars($post->getAuthor(), ENT_QUOTES, 'UTF-8') ?></td>
                         <td><?= htmlspecialchars($post->getHeading(), ENT_QUOTES, 'UTF-8') ?></td>
