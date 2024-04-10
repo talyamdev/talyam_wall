@@ -1,0 +1,4 @@
+<Files "propel.yaml">
+    Order allow,deny
+    Deny from all
+</Files>
